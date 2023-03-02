@@ -1,5 +1,10 @@
-## To run this project
-console : npm run start
+# Simple Spell Checker App
 
-## To build css
-console : npm run build:css
+This app will just display mistakes from your text, and provide correction.
+
+(using Cordial.com Api)
+## For dev purposes:
+### To run this project
+```npm run start```
+### To build css
+```npm run build:css```

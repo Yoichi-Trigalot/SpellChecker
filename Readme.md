@@ -1,9 +1,12 @@
-# Simple Spell Checker App
+# Simple Spell Checker App ✍🏼
 
 This app will just display mistakes from your text, and provide correction.
 
+Only French language supported. 🇫🇷
+
 (using Cordial.com Api)
-## For dev purposes:
+
+## For dev purposes: 🚀
 ### To run this project
 ```npm run start```
 ### To build css

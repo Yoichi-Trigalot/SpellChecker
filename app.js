@@ -76,3 +76,6 @@ app.post('/api', async (req, res) => {
 });
 
 app.listen(port, () => console.info(`App listening on port ${port}`))
+
+// Export the Express API
+module.exports = app;

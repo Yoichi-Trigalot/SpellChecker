@@ -33,7 +33,7 @@ const myfunction = (ev) => {
 		try {
 
 			// Call the Node server Api
-			const response = await axios.post('http://localhost:5000/api', { text: formData }, { headers: { 'Content-Type': 'application/json' } });
+			const response = await axios.post('https://spell-checker-theta.vercel.app/api', { text: formData }, { headers: { 'Content-Type': 'application/json' } });
 			const data = response.data.document; // get xml response from Cordial API
 
 			// lets gather all errors in one Array

@@ -39,16 +39,16 @@ app.use('/img', express.static(__dirname + 'public/images'))
 // fav.icon
 app.use(favicon(__dirname + '/public/img/favicon.ico'));
 
-app.use(urlencoded({ extended: true }));
-app.use(express.json())
-app.use(cors());
-
 // Set View's
 app.set('views', './views');
 app.set('view engine', 'ejs');
 
+app.use(urlencoded({ extended: true }));
+app.use(express.json())
+app.use(cors());
+
 // Navigation
-app.get('', (req, res) => {
+app.get('/', (req, res) => {
 	res.render('index', { data: {title:'Spell Checker 101'} })
 })
 

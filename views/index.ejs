@@ -1,30 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Spell Checker</title>
-    <link rel="stylesheet" href="css/main.css" />
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-  </head>
 
-  <body>
-    <div class="m-auto container min-h-screen flex flex-col">
-      <h1 class="text-blue text-center text-2xl mt-12"><%= data.title %></h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spell Checker</title>
+  <link rel="stylesheet" href="css/main.css" />
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+  <div class="m-auto min-w-screen min-h-screen flex flex-col">
+    <div class="bg-blue h-12 min-w-full">
+      <h1 class="text-white text-center text-2xl mt-2">
+        <%= data.title %>
+      </h1>
+    </div>
+    <div class="container mx-auto">
       <div>
         <form id="form" class="form-vertical">
           <div class=" mt-10">
             <!-- <label class="text-lg" for="text">Enter your text :</label> -->
-            <textarea
-              id="text"
-              placeholder="✍🏼 Enter text here.."
-              class="p-4 border border-blue rounded-lg my-4 min-w-full h-48"
-            ></textarea>
-            <button
-              type="submit"
+            <textarea id="text" placeholder="✍🏼 Enter text here.."
+              class="p-4 border border-blue rounded-lg my-4 min-w-full h-48"></textarea>
+            <button type="submit"
               class="text-blue bg-white border border-blue hover:bg-blue hover:text-white font-medium rounded-lg text-sm px-5 py-2.5 my-4 text-center"
-							onclick="myfunction()"
-							>
+              onclick="myfunction()">
               🔍 Check
             </button>
           </div>
@@ -34,7 +35,9 @@
       <br />
       <div id="result" class="container border border-green rounded p-10"> Errors will appear in this part</div>
     </div>
-		<!-- script part -->
-		<script type="text/javascript" src="js/script.js"></script>
-  </body>
+  </div>
+  <!-- script part -->
+  <script type="text/javascript" src="js/script.js"></script>
+</body>
+
 </html>

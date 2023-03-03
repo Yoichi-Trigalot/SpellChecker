@@ -12,10 +12,8 @@ const myfunction = (ev) => {
 					<div>❌ <b>${element.error}</b> -> <span style="color:#24855B">${element.substitution}</span></div>
 					<div>${element.message}</div>
 					</div>
-					<br />
-					<hr>
-					<br />`
-		}).join('');
+					`
+		}).join('<br />');
 
 		let emphasize = Errors.map(x => ({ startIndex: x.start - 2, endIndex: x.end - 2, mot: x.error }))
 		let indexGap = 0

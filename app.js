@@ -40,7 +40,7 @@ app.use('/img', express.static(__dirname + 'public/images'))
 app.use(favicon(__dirname + '/public/img/favicon.ico'));
 
 // Set View's
-app.set('views', './views');
+app.set('views', __dirname + '/./views');
 app.set('view engine', 'ejs');
 
 app.use(urlencoded({ extended: true }));

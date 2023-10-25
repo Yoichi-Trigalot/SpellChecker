@@ -1,0 +1,14 @@
+{
+  "name": "spell-checker",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/zsh",
+    "editor.tabSize": 2
+  },
+  "appPort": [
+    "5000:5000"
+  ],
+  "workspaceFolder": "/app"
+}

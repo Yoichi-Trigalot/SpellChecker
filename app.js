@@ -27,7 +27,7 @@ const requestBody = (text) => {
 }
 
 const app = express()
-const port = 5000
+const port = 3000
 
 // Static Files
 app.use(express.static('public'));
@@ -53,7 +53,7 @@ app.get('/', (req, res) => {
 })
 
 //post request to api
-app.post('/api', async (req, res) => {
+app.post('/', async (req, res) => {
 	const { text } = req.body; // get text to check
 	let dataXmlFormatted = requestBody(text) // format xml body request
 

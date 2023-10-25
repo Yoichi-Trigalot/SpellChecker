@@ -32,7 +32,7 @@ const myfunction = (ev) => {
 		try {
 
 			// Call the Node server Api
-			const response = await axios.post('https://spell-checker-puce.vercel.app/api', { text: formData }, { headers: { 'Content-Type': 'application/json' } });
+			const response = await axios.post('https://spell-checker-puce.vercel.app/', { text: formData }, { headers: { 'Content-Type': 'application/json' } }); // this should be localhost:3000 in dev
 			const data = response.data.document; // get xml response from Cordial API
 
 			// lets gather all errors in one Array

@@ -3,9 +3,12 @@
   "version": "1.0.0",
   "description": "Simple spell checker app ",
   "main": "index.js",
+  "engines": {
+    "node": "18.4.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon app.js",
+    "start": "node app.js",
     "build:css": "postcss public/css/tailwind.css -o public/css/main.css"
   },
   "author": "Yoïchi Trigalot",
